@@ -1,0 +1,48 @@
+body {
+  margin: 10%;
+}
+#drum-machine {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 500px;
+  margin: auto;
+  grid-gap: 5px;
+}
+#pad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 250px;
+  grid-gap: 5px;
+}
+#pad .drum-pad {
+  font-family: Consolas;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  padding:20px;
+  background-color: crimson;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: background-color 100ms ease, border 200ms ease, padding 500ms ease;
+}
+#pad .drum-pad:hover {
+  background-color: #fff;
+  color: crimson;
+  border: 10px crimson solid;
+  padding: 10px;
+}
+
+.drum-pad-hover {
+  background-color: #fff !important;
+  color: crimson !important;
+  border: 10px crimson solid;
+  padding: 10px;
+}
+
+#controls {
+  display: grid;
+  color: crimson !important;
+  border: 10px crimson solid;
+}
+#display { margin: auto; }
